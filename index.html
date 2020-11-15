@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="portada">
+               
+                    <h2><a href="#">Máster en CSS</a> </h2>
+                
+                
+                <img src="assets/img/portada.jpg" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Productos</a>
+                        <ul>
+                            <li>
+                                <a href="#">Deportivos</a>
+                            </li>
+                            <li>
+                                <a href="#">Electro</a>
+                            </li>
+                            <li>
+                                <a href="#">Ropa</a>
+                            </li>
+                            <li>
+                                <a href="#">Niños</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <aside id="aside">
+            <div class="widget">
+                <div id="login">
+                    <h2>Login</h2>
+                    <span id="mensaje"></span>
+                    <form action="" method="post" id="formulario">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                        <input type="submit" class="boton btn-sm" value="Ingresar">
+                    </form>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3>Imagenes</h3>
+                <div class="imagen">
+                    <img src="assets/img/img1.jpg" alt="paisaje1" class="imagen-aside" id="myImg">
+                </div>
+                <div class="imagen">
+                   <img src="assets/img/img2.jpg" alt="paisaje2" class="imagen-aside" id="myImg2">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/img3.jpg" alt="paisaje3" class="imagen-aside" id="myImg3">
+                </div>
+            </div>
+
+        </aside>
+
+
+
+        <section id="content">
+            <h1 class="titulo">Contenido principal</h1>
+            <div class="listado-productos">
+                <div class="producto">
+                    <h3>Lentes de sol</h3>
+                    <img src="assets/img/lente.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum quod itaque ea ducimus
+                        mollitia
+                        quae eveniet odit officiis minus vero praesentium delectus quasi distinctio iure cum, accusamus
+                        quo
+                        eligendi?
+                    </p>
+                    <a href="#" class="boton" onclick="comprar()">Comprar</a>
+                </div>
+            </div>
+            <div class="listado-productos">
+                <div class="producto">
+                    <h3>Bicicleta</h3>
+                    <img src="assets/img/bici.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum quod itaque ea ducimus
+                        mollitia
+                        quae eveniet odit officiis minus vero praesentium delectus quasi distinctio iure cum, accusamus
+                        quo
+                        eligendi?
+                    </p>
+                    <a href="#" class="boton" onclick="comprar()">Comprar</a>
+                </div>
+            </div>
+            <div class="listado-productos">
+                <div class="producto">
+                    <h3>Balon de futbol</h3>
+                    <img src="assets/img/pelota.jpg" alt="">
+                    <p>No importa si eres aficionado o una futura estrella, el balón de fútbol ftblPLAY Big Cat está
+                        diseñado para mejorar la performance en el campo de juego.
+                    </p>
+                    <a href="#" class="boton" onclick="comprar()">Comprar</a>
+                </div>
+            </div>
+            <div class="listado-productos">
+                <div class="producto">
+                    <h3>Juguetes</h3>
+                    <img src="assets/img/juguete1.png" alt="">
+                    <p>Para mantener a los niños felices y entretenerse en familia, el juego de mesa Virus, se ha vuelto
+                        contagioso
+                        entre muchos jóvenes , requiriendo estrategia e inteligencia para ganar el juego.
+                    </p>
+                    <a href="#" class="boton" onclick="comprar()">Comprar</a>
+                </div>
+            </div>
+            <div class="listado-productos">
+                <div class="producto">
+                    <h3>Piscina</h3>
+                    <img src="assets/img/piscina.png" alt="">
+                    <p>Con la llegada del verano y el confinamiento, las actividades en casa toman más importancia y así
+                        las piscinas inflables
+                        para los más pequeños. Con un precio asequible este pack cuenta con dos piscinas.
+                    </p>
+                    <a href="#" class="boton" onclick="comprar()">Comprar</a>
+                </div>
+            </div>
+            <div class="listado-productos">
+                <div class="producto">
+                    <h3>Equipo anti covid19</h3>
+                    <img src="assets/img/mascarilla.png" alt="">
+                    <p>Gel desinfectante de manos o pequeños alcohol
+                        gel portatil se han llevado el primer lugar de ventas online el año 2020 seguidos de las
+                        mascarillas de boca.
+                    </p>
+                    <a href="#" class="boton" onclick="comprar()">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <p>Copyright &copy; 2020</p>
+        </footer>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+</body>
+
+</html>

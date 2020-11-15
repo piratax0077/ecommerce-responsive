@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <title>Ecommerce</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="portada">
+                <h2><a href="#">Máster en CSS</a> </h2>
+                <img src="assets/img/portada.jpg" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul>
+                            <li>
+                                <a href="#">Deportivos</a>
+                            </li>
+                            <li>
+                                <a href="#">Electrónicos</a>
+                            </li>
+                            <li>
+                                <a href="#">Ropa</a>
+                            </li>
+                            <li>
+                                <a href="#">Niños</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="aside">
+            <div class="widget">
+                <div id="login">
+                    <h2>Login</h2>
+                    <span id="mensaje"></span>
+                    <form action="" method="post" id="formulario" >
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                        <input type="submit" class="boton btn-sm" value="Ingresar">
+                    </form>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3>Imagenes</h3>
+                <div class="imagen">
+                    <img src="assets/img/img1.jpg" alt="paisaje1" class="imagen-aside" id="myImg">
+                </div>
+                <div class="imagen">
+                   <img src="assets/img/img2.jpg" alt="paisaje2" class="imagen-aside" id="myImg2">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/img3.jpg" alt="paisaje3" class="imagen-aside" id="myImg3">
+                </div>
+            </div>
+
+        </aside>
+        <section id="content-nosotros">
+            <h1 class="titulo">Nosotros</h1>
+            <div id="perfil-goku">
+                <img src="assets/img/goku.jpg" alt="" id="goku">
+                <div class="descripcion">
+                    <h3 class="subtitulo">Goku</h3>
+                    <article id="article">Su nombre real y de nacimiento es Kacarrot (カカロットKan, KakarottoHepJP, Kakarrot en Saiyan.png en alfabeto saiyano) y es uno de los pocos saiyanos que lograron sobrevivir a la destrucción total del Planeta Vegeta del Universo 7. 
+                        Es el segundo hijo de Bardock y Gine, hermano menor de Raditz, nieto adoptivo de Son Gohan, esposo de Chi-Chi, 
+                        padre de Son Gohan y Son Goten, a su vez también es el abuelo de Pan y ancestro de Son Goku Jr.
+                    </article>
+                    <div class="clearfix"></div>
+                    <blockquote>"Por todos los que vivieron bajo el tirano Freeza, por todos los saiyanos que tú exterminaste, y también, por todos los habitantes del planeta Namek. ¡Escucha bien, te voy a matar!"</blockquote>
+                </div>
+                
+            </div>
+            <div id="perfil-vegeta">
+                
+                <img src="assets/img/vegeta.JPG" alt="" id="vegeta">
+                
+                <div class="descripcion">
+                    <h3 class="subtitulo">Vegeta</h3>
+                    <article id="article">Es el hijo mayor del Rey Vegeta III, así como el príncipe más reciente de la familia real saiyana y uno de los pocos supervivientes tras el genocidio saiyano del planeta Vegeta del Universo 7, destruido a manos de Freeza. Es el eterno rival de Son Goku, 
+                        hermano mayor de Tarble, el esposo de Bulma, padre de Trunks y Bra y ancestro de Vegeta Jr.
+                    </article>
+                    <blockquote>"El ser durmiente dentro de mí se ha despertado. Yo soy el príncipe de todos los saiyanos, una vez más... ¡Yo he vuelto!"</blockquote>
+                    <blockquote>"Lo sé porque tú nunca te atreviste a matarme. Parece ser que finalmente he comprendido que en mi corazón hay un poco de sentimiento que suelen tener los humanos. Pero no puedo 
+                        soportar la idea de que existe un saiyajin generoso, que le gusta pelear. ¡Tú puedes Kakaroto! Eres el número uno."</blockquote>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <p>Copyright &copy; 2020</p>
+        </footer>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+</body>
+</html>

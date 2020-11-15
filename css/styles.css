@@ -1,0 +1,657 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+@font-face{
+    font-family: "xanhMono";
+    src: url(../assets/fonts/Xanh_Mono/XanhMono-Italic.ttf);
+}
+
+.clearfix{
+    float: none;
+}
+
+body{
+    background-image: url("../assets/img/pattern.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+input[type="text"],
+input[type="password"],
+select{
+    padding: 5px;
+    background-color: #eee;
+    margin: 3px;
+    
+    box-shadow: 0px 0px 2px inset black;
+}
+/*
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 2px solid green;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+select:hover{
+
+    border: 2px solid green;
+}
+*/
+.boton{
+    padding: 10px;
+    color: white;
+    background: cadetblue;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.btn-sm{
+    padding: 2px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.container{
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: 0px auto;
+}
+
+#header{
+    display: block;
+    width: 100%;
+}
+
+#portada{
+    box-shadow: 0px 0px 2px black;
+    line-height: 400px;
+    width: 100%;
+}
+
+#portada h2{
+    position: absolute;
+    display: block;
+    margin: 0px auto;;
+    font-size: 45px;
+    text-shadow: 0px 0px 2px red;
+   width: 90%;
+   text-align: center;
+}
+
+#portada #titulo{
+    width: 100%;
+}
+
+#portada h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+#portada img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 0px auto;
+    background-color: #ccc;
+}
+
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 400px;
+    
+}
+
+#nav ul li{
+    float: left;
+    margin-right: 10px;
+    padding: 8px;
+    line-height: 25px;
+    font-family: "xanhMono";
+    font-size: 19px;
+}
+
+#nav ul li ul{
+    display: none;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color:black;
+    transition: all 300ms;
+}
+
+#nav > ul > li:hover > a{
+    font-size: 22px;
+    color: blue;
+   
+}
+
+#nav > ul > li:hover ul{
+    margin-top: 10px;
+    padding-left: 0px;
+    display: block;
+    position: absolute;
+    width: 120px;
+    background: #c1ebfa;
+}
+
+
+#nav > ul > li:hover > ul{
+    width: 96px;
+}
+
+#nav > ul > li:hover > ul > li a{
+    color: black;
+}
+
+
+#nav > ul > li:hover > ul > li:hover {
+    background: blue;
+    width: 80px;
+} 
+
+#nav > ul > li:hover > ul > li:hover a{
+    color: white;
+} 
+
+#aside{
+    position: absolute;
+    clear: both;
+    float: left;
+    width: 200px;
+    background: white;
+    margin-top: 10px;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+#aside .widget{
+    padding: 7px;
+    text-align: center;
+    border-bottom: 1px dashed #ef8ff1;
+}
+
+
+#aside .widget .imagenes{
+    width: 200px;
+}
+
+#aside .widget #login label{
+    font-size: 20px;
+    font-family: "xanhMono";
+}
+
+#aside .widget #login h2,
+#aside .widget h3,
+.listado-productos .producto h3 {
+    font-size: 24px;
+    font-family: "xanhMono";
+    background-color: #eee;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+#aside .imagen-aside{
+    width: 170px;
+    transition: all 300ms;
+}
+
+#aside .imagen-aside:hover{
+    box-shadow: 1px 3px 3px black;
+}
+
+#content,
+#content-nosotros{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    width: 80%;
+    background: white;
+    padding-top: 20px;
+    text-align: center;
+    min-height: 910px;
+    margin-bottom: 10px;
+}
+
+#content-nosotros{
+    text-align: justify;
+    width: 74% ;
+}
+
+.titulo{
+    color: blue;
+    font-size: 23px;
+    border-bottom: 1px solid red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#content .listado-productos{
+    display: block;
+    width: 300px;
+    height: 380px;
+    margin-top: 30px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 2px black;
+}
+
+#content .listado-productos .producto p{
+    margin-bottom: 73px;
+    text-align: justify;
+    height: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content .listado-productos .producto img{
+    width: 140px;
+    height: 164px;
+}
+
+#content .listado-productos .producto a:hover,
+.btn-sm:hover{
+    background: crimson;
+}
+
+#content .perfil{
+    display: block;
+    height: 600px;
+    border: 1px solid red;
+}
+
+#footer{
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 70px;
+    background: #Ccc;
+    line-height: 70px;
+    text-align: center;
+    font-family: "xanhMono";
+}
+label.error {
+    color: red;
+    font-size: 13px !important;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+
+#content-nosotros{
+    width: 80%;
+}
+
+#content-nosotros h1{
+    text-align: center;
+}
+
+#content-nosotros img{
+    width: 300px;
+    float: left;
+    transition: all 300ms;
+}
+
+#content-nosotros img:hover{
+    box-shadow: 0px 0px 3px black;
+}
+
+#content-nosotros #perfil-goku{
+    display: block;
+    float: left;
+    margin: 3px;
+    margin-bottom: 30px;
+}
+
+#content-nosotros #perfil-vegeta{
+    clear: both;
+    display: block;
+    margin: 3px;
+}
+
+.descripcion blockquote{
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#content-nosotros #perfil-vegeta{
+    display: block;
+    float: right;
+}
+
+#content-nosotros #perfil-vegeta h3{
+    color: blue;
+}
+
+#content-nosotros .descripcion{
+    margin-left: 313px;
+}
+
+#content-nosotros .descripcion #article{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 21px;
+}
+
+#content-nosotros .descripcion .subtitulo{
+    margin: 10px;
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#content-nosotros .descripcion .subtitulo:hover{
+    text-shadow: 0px 0px 2px red;
+}
+
+/* Modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px){
+    #content{
+        width: 73%;
+    }
+
+      #content-nosotros{
+          width:65% ;
+      }
+
+      #nav ul{
+          padding-left: 260px;
+      }
+  }
+
+@media (max-width:946px){
+    #content .listado-productos{
+        margin-left: 155px;
+    }
+}
+
+  @media (max-width: 918px){
+    #nav ul{
+        padding-left: 150px;
+    }
+    #content .listado-productos{
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 888px){
+
+    #nav ul{
+        padding-left: 100px;
+    }
+
+    #portada{
+        line-height: 200px;
+    }
+
+    #content{
+        width: 60%;
+    }
+
+    #content-nosotros{
+        width: 70%;
+    }
+
+   
+
+    #content-nosotros img{
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    #content-nosotros .descripcion{
+        margin-left: 9px;
+    }
+}
+
+    @media (max-width: 826px){
+        #content,
+        #content-nosotros{
+            width: 70%;
+            margin-right: 0px;
+        }
+
+        #content .listado-productos{
+            margin-left: 107px;
+        }
+
+    }
+
+  @media (max-width:768px){
+    #content{
+        width: 68%;
+    }
+
+    #content .listado-productos{
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 667px){
+    input[type="text"],
+    input[type="password"]{
+        width: 150px;
+
+    }
+    #content,
+    #content-nosotros{
+        width: 65%;
+    }
+
+    #content .listado-productos{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:644px){
+    #content-nosotros{
+        width: 63%;
+    }
+}
+
+@media (max-width:640px){
+    #nav ul{
+        padding-left: 110px;
+    }
+    #content .listado-productos{
+        margin-left: 35px;
+    }
+}
+
+@media (max-width:568px){
+    #nav ul{
+        padding-left: 35px;
+    }
+
+    #content-nosotros{
+        width: 60%;
+    }
+
+    #content .listado-productos{
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 411px){
+    .container{
+        width: 100%;
+    }
+
+    #content,
+    #content-nosotros{
+        width: 100%;
+    }
+
+    aside{
+        display: none;
+    }
+    #nav ul{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    #nav ul li{
+        padding: 5px;
+    }
+
+    #nav ul li:hover a  ul  li{
+        width: 150px;
+    }
+}
+
+  @media (max-width: 360px){
+
+    .container{
+        width: 100%;
+    }
+
+    #nav ul{
+        padding-left: 0px !important;
+    }
+
+    #nav ul li{
+        margin-right: 0px;
+    }
+
+    #nav > ul > li:hover > ul{
+        width: 90px;
+    }
+
+    #nav > ul > li:hover > ul {
+        font-size: 17px;
+    }
+
+
+    #aside{
+        display: none;
+    }
+
+    #content{
+        width: 100%;
+    }
+
+    #content .listado-productos{
+        margin-left: 20px;
+    }
+
+    #content-nosotros{
+        width: 100%;
+    }
+
+    #portada{
+        line-height: 116px;
+    }
+}
+
+@media (max-width: 320px){
+    #nav ul li{
+        padding: 3px;
+    }
+    
+}

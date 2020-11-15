@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    
+        <script src="js/main.js"></script>
+        <title>Ecommerce</title>
+    </head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="portada">
+                <h2><a href="#">Máster en CSS</a> </h2>
+                <img src="assets/img/portada.jpg" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul>
+                            <li>
+                                <a href="#">Deportivos</a>
+                            </li>
+                            <li>
+                                <a href="#">Electrónicos</a>
+                            </li>
+                            <li>
+                                <a href="#">Ropa</a>
+                            </li>
+                            <li>
+                                <a href="#">Niños</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="aside">
+            <div class="widget">
+                <div id="login">
+                    <h2>Login</h2>
+                    <span id="mensaje"></span>
+                    <form action="" method="post" id="formulario" >
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                        <input type="submit" class="boton btn-sm" value="Ingresar">
+                    </form>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3>Imagenes</h3>
+                <div class="imagen">
+                    <img src="assets/img/img1.jpg" alt="paisaje1" class="imagen-aside" id="myImg">
+                </div>
+                <div class="imagen">
+                   <img src="assets/img/img2.jpg" alt="paisaje2" class="imagen-aside" id="myImg2">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/img3.jpg" alt="paisaje3" class="imagen-aside" id="myImg3">
+                </div>
+            </div>
+
+        </aside>
+
+        <section id="content">
+            <h1 class="titulo">Contacto</h1>
+        </section>
+        <footer id="footer">
+            <p>Copyright &copy; 2020</p>
+        </footer>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+</body>
+</html>
